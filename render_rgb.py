@@ -57,7 +57,7 @@ def scene_setting_init(use_gpu):
     if use_gpu:
         bpy.data.scenes[sce].render.engine = 'CYCLES' #only cycles engine can use gpu
         bpy.data.scenes[sce].render.tile_x = g_hilbert_spiral
-        bpy.data.scenes[sce].render.tile_x = g_hilbert_spiral
+        bpy.data.scenes[sce].render.tile_y = g_hilbert_spiral
         bpy.types.CyclesRenderSettings.device = 'GPU'
         bpy.data.scenes[sce].cycles.device = 'GPU'
 
